@@ -14,9 +14,7 @@ let contentGridElementIna = document.getElementById('char-grid-inazuma');
   element (ameno, pyro, hydro, etc.)
   region (mondstat, liyue, inazuma, etc.)
   lore/fun fact (job/title, relation to another character, etc.)
-*/
 
-/*
   characters that will get cards currently:
   traveler:
     aether
@@ -44,9 +42,6 @@ let contentGridElementIna = document.getElementById('char-grid-inazuma');
     thoma
     kokomi
     sayu
-
-  sheznaya:
-    tartaglia
 */
 
 /*
@@ -59,13 +54,13 @@ let contentGridElementIna = document.getElementById('char-grid-inazuma');
   Hydro   ->  #31bbee
 */
 
-var four_star = "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Icon_4_Stars.png/revision/latest/scale-to-width-down/51?cb=20201226100702"
-var five_star = "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Icon_5_Stars.png/revision/latest/scale-to-width-down/63?cb=20201226100736"
+var four_star = "images/four_star.png"
+var five_star = "images/five_star.png"
 
 let travelerDatabase = [
   {
     "title" : "Aether",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/Traveler_Male_Card.jpg/revision/latest/scale-to-width-down/562?cb=20201024043323",
+    "picture_url" : "images/traveler_male.jpeg",
     "color" : "#e9c979", // match element color
     "rarity" : five_star,
     "element" : "Ameno, Geo, Electro (Geo-coded)",
@@ -74,7 +69,7 @@ let travelerDatabase = [
   },
   {
     "title" : "Lumine",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/Traveler_Female_Card.jpg/revision/latest/scale-to-width-down/562?cb=20201024043415",
+    "picture_url" : "images/traveler_female.jpeg",
     "color" : "#b8e2f2", // match element color
     "rarity" : five_star,
     "element" : "Ameno, Geo, Electro (Ameno-coded)",
@@ -86,7 +81,7 @@ let travelerDatabase = [
 let mondstatDatabase = [
   {
     "title" : "Venti",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg/revision/latest/scale-to-width-down/562?cb=20201024042752",
+    "picture_url" : "images/venti.jpeg",
     "color" : "#bcecd7", // match element color
     "rarity" : five_star,
     "element" : "Ameno",
@@ -95,7 +90,7 @@ let mondstatDatabase = [
   },
   {
     "title" : "Jean",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg/revision/latest/scale-to-width-down/562?cb=20210706133041",
+    "picture_url" : "images/jean.jpeg",
     "color" : "#bcecd7", // match element color
     "rarity" : five_star,
     "element" : "Ameno",
@@ -104,7 +99,7 @@ let mondstatDatabase = [
   },
   {
     "title" : "Kaeya",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/6/64/Character_Kaeya_Card.jpg/revision/latest/scale-to-width-down/562?cb=20190704215128",
+    "picture_url" : "images/kaeya.jpeg",
     "color" : "#ccf6f8", // match element color
     "rarity" : four_star,
     "element" : "Cryo",
@@ -113,7 +108,7 @@ let mondstatDatabase = [
   },
   {
     "title" : "Amber",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg/revision/latest/scale-to-width-down/562?cb=20201024042115",
+    "picture_url" : "images/amber.jpeg",
     "color" : "#ee764e", // match element color
     "rarity" : four_star,
     "element" : "Pyro",
@@ -122,7 +117,7 @@ let mondstatDatabase = [
   },
   {
     "title" : "Lisa",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/d/dc/Character_Lisa_Card.jpg/revision/latest/scale-to-width-down/562?cb=20201024042621",
+    "picture_url" : "images/lisa.jpeg",
     "color" : "#d590fa", // match element color
     "rarity" : four_star,
     "element" : "Electro",
@@ -131,7 +126,7 @@ let mondstatDatabase = [
   },
   {
     "title" : "Barbara",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/9/93/Character_Barbara_Card.jpg/revision/latest/scale-to-width-down/562?cb=20201024042228",
+    "picture_url" : "images/barbara.jpeg",
     "color" : "#31bbee", // match element color
     "rarity" : four_star,
     "element" : "Hydro",
@@ -143,7 +138,7 @@ let mondstatDatabase = [
 let liyueDatabase = [
   {
     "title" : "Zhongli",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Zhongli_Card.png/revision/latest/scale-to-width-down/562?cb=20201217052506",
+    "picture_url" : "images/zhongli.png",
     "color" : "#f4d284", // match element color
     "rarity" : five_star,
     "element" : "Geo",
@@ -152,7 +147,7 @@ let liyueDatabase = [
   },
   {
     "title" : "Ningguang",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/3/3e/Character_Ningguang_Card.jpg/revision/latest/scale-to-width-down/562?cb=20200401040354",
+    "picture_url" : "images/ningguang.jpeg",
     "color" : "#f4d284", // match element color
     "rarity" : four_star,
     "element" : "Geo",
@@ -161,7 +156,7 @@ let liyueDatabase = [
   },
   {
     "title" : "Yanfei",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/f/f3/Character_Yanfei_Card.png/revision/latest/scale-to-width-down/562?cb=20210422100113",
+    "picture_url" : "images/yanfei.png",
     "color" : "#ee764e", // match element color
     "rarity" : four_star,
     "element" : "Pyro",
@@ -170,7 +165,7 @@ let liyueDatabase = [
   },
   {
     "title" : "Xiangling",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Character_Xiangling_Card.jpg/revision/latest/scale-to-width-down/562?cb=20200331191545",
+    "picture_url" : "images/xiangling.jpeg",
     "color" : "#ee764e", // match element color
     "rarity" : four_star,
     "element" : "Pyro",
@@ -179,7 +174,7 @@ let liyueDatabase = [
   },
   {
     "title" : "Qiqi",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg/revision/latest/scale-to-width-down/562?cb=20200904131037",
+    "picture_url" : "images/qiqi.jpeg",
     "color" : "#ccf6f8", // match element color
     "rarity" : five_star,
     "element" : "Cryo",
@@ -188,7 +183,7 @@ let liyueDatabase = [
   },
   {
     "title" : "Chongyun",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/f/fa/Character_Chongyun_Card.jpg/revision/latest/scale-to-width-down/562?cb=20201024042420",
+    "picture_url" : "images/chongyun.jpeg",
     "color" : "#ccf6f8", // match element color
     "rarity" : four_star,
     "element" : "Cryo",
@@ -200,7 +195,7 @@ let liyueDatabase = [
 let inazumaDatabase = [
   {
     "title" : "Raiden Shogun (real name: Raiden Ei)",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Character_Raiden_Shogun_Card.jpg/revision/latest/scale-to-width-down/562?cb=20210914130858",
+    "picture_url" : "images/raiden_shogun.jpeg",
     "color" : "#d590fa", // match element color
     "rarity" : five_star,
     "element" : "Electro",
@@ -209,7 +204,7 @@ let inazumaDatabase = [
   },
   {
     "title" : "Kaedehara Kazuha",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png/revision/latest/scale-to-width-down/562?cb=20210607100841",
+    "picture_url" : "images/kazuha.png",
     "color" : "#89f2c3", // match element color
     "rarity" : five_star,
     "element" : "Ameno",
@@ -218,7 +213,7 @@ let inazumaDatabase = [
   },
   {
     "title" : "Kamisato Ayaka",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png/revision/latest/scale-to-width-down/562?cb=20210607100828",
+    "picture_url" : "images/ayaka.png",
     "color" : "#ccf6f8", // match element color
     "rarity" : five_star,
     "element" : "Cryo",
@@ -227,7 +222,7 @@ let inazumaDatabase = [
   },
   {
     "title" : "Sangonomiya Kokomi",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Character_Sangonomiya_Kokomi_Card.jpg/revision/latest/scale-to-width-down/562?cb=20210722100135",
+    "picture_url" : "images/kokomi.jpeg",
     "color" : "#31bbee", // match element color
     "rarity" : five_star,
     "element" : "Hydro",
@@ -236,7 +231,7 @@ let inazumaDatabase = [
   },
   {
     "title" : "Thoma",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/2/29/Character_Thoma_Card.jpg/revision/latest/scale-to-width-down/562?cb=20210830125722",
+    "picture_url" : "images/thoma.jpeg",
     "color" : "#ee764e", // match element color
     "rarity" : four_star,
     "element" : "Pyro",
@@ -245,7 +240,7 @@ let inazumaDatabase = [
   },
   {
     "title" : "Sayu",
-    "picture_url" : "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Character_Sayu_Card.png/revision/latest/scale-to-width-down/562?cb=20210607100829",
+    "picture_url" : "images/sayu.png",
     "color" : "#89f2c3", // match element color
     "rarity" : four_star,
     "element" : "Ameno",
