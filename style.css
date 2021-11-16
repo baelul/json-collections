@@ -1,0 +1,126 @@
+body {
+  text-align: center;
+  background-color: #eee;
+  font-family: 'Rubik', helvetica, arial, sans-serif;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 80px;
+  padding: 0 100px 0 100px;
+}
+
+h2 {
+  font-size: 65px;
+  margin: 20px;
+  padding: 100px;
+}
+
+p {
+  margin: 0 10vmin 0 10vmin;
+}
+
+.header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 102vh;
+  background-image: url("https://images.wallpapersden.com/image/download/klee-genshin-impact_bGlmZmuUmZqaraWkpJRnZWltrWZmamc.jpg");
+  background-size: 100%;
+}
+
+.header p {
+  text-shadow: 2px 2px #000000;
+  margin: 0 50vmin 0 50vmin;
+}
+
+.header h1 {
+  text-shadow: 4px 4px #000000;
+}
+
+.contentItem {
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 6vmin 0 7vmin 0;
+}
+
+.char-img {
+  height: auto;
+  max-width: 80%; /* if 100%, set top padding in .contentItem to 0*/
+}
+
+.rarity {
+  height: auto;
+  width: 130px;
+  padding-top: 2vmin;
+}
+
+#char-grid-traveler {
+  display: grid;
+  border-radius: 20px;
+  margin: 2vw 20vw 0 20vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1vmin;
+  grid-row-gap: 1vmin;
+  padding: 2vmin;
+  font-size: 1.2rem;
+
+ }
+
+/* anything above 1400px */
+#char-grid-mondstat, #char-grid-liyue, #char-grid-inazuma {
+  display: grid;
+  margin: 2vw 12vw 0 12vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1vmin;
+  grid-row-gap: 1vmin;
+  padding: 2vmin;
+  font-size: 1.2rem;
+
+}
+
+/* rezise to two cards a page at 1400px */
+@media only screen and (max-width: 1400px) {
+  #char-grid-traveler, #char-grid-mondstat, #char-grid-liyue, #char-grid-inazuma {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header p {
+      margin: 0 30vmin 0 30vmin;
+  }
+}
+
+/* rezise to one cards a page at 940px */
+@media only screen and (max-width: 940px) {
+  #char-grid-traveler, #char-grid-mondstat, #char-grid-liyue, #char-grid-inazuma {
+    margin: 2vw 12vw 0 12vw;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header p {
+      margin: 0 10vmin 0 10vmin;
+  }
+}
+
+#travelers {
+  background-color: rgba(211, 211, 211, 0.35);
+}
+
+#mondstadt {
+  background-color: rgba(137, 242, 195, 0.25);
+}
+
+#liyue {
+  background-color: rgba(244, 210, 132, 0.25);
+}
+
+#inazuma {
+  background-color: rgba(213, 144, 250, 0.25);
+}
